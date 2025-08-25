@@ -32,10 +32,6 @@ const Hero = () => {
             See the signal, map the objective.
           </p>
 
-          {/* Description */}
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            A multi-domain intelligence and insight hub designed to transform raw signals into actionable objectives.
-          </p>
 
           {/* CTA Button */}
           <Button
