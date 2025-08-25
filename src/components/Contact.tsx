@@ -129,10 +129,10 @@ const Contact = () => {
                 <p className="text-sm text-muted-foreground">
                   Or reach us directly at{" "}
                   <a 
-                    href="mailto:info@quantumnode.com" 
+                    href="mailto:info@quantum-node.ai" 
                     className="text-accent hover:text-accent/80 transition-colors font-medium"
                   >
-                    info@quantumnode.com
+                    info@quantum-node.ai
                   </a>
                 </p>
               </div>

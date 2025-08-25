@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-primary-foreground/80 text-sm">
-              © 2024 QuantumNODE. All rights reserved.
+              © 2025 QuantumNODE. All rights reserved.
             </p>
             <p className="text-primary-foreground/60 text-xs mt-1">
               Transforming signals into objectives.
