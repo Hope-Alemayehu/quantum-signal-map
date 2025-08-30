@@ -27,8 +27,21 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission - replace with actual endpoint
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch("https://emktqltshiumxdpaxpfh.supabase.co/functions/v1/send-contact-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
       
       toast({
         title: "Message sent successfully!",
@@ -37,6 +50,7 @@ const Contact = () => {
       
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
+      console.error("Error sending message:", error);
       toast({
         title: "Error sending message",
         description: "Please try again later.",
